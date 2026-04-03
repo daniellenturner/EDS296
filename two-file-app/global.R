@@ -5,6 +5,7 @@ library(tidyverse)
 library(palmerpenguins)
 library(shinyWidgets)
 library(markdown)
+library(shinycssloaders)
 
 # data wrangling ----
 clean_trout <- and_vertebrates |>

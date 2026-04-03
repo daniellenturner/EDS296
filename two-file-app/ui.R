@@ -61,7 +61,9 @@ ui <- navbarPage(
                  # trout mainPanel ----
                  mainPanel(
                    
-                   plotOutput(outputId = "trout_scatterplot_output")
+                   plotOutput(outputId = "trout_scatterplot_output") |>
+                     
+                     withSpinner(color = "aquamarine3", type = 4, size = 2)
                    
                  ) # END trout mainPanel
                  
@@ -95,7 +97,9 @@ ui <- navbarPage(
                    
                  ), # END penguin mainPanel
                  
-                 plotOutput(outputId = "flipper_length_histogram_output")
+                 plotOutput(outputId = "flipper_length_histogram_output") |>
+                   
+                   withSpinner(color = "cornflowerblue", type = 5, size = 2)
                  
                ) # END penguin sidebarLayout
                
